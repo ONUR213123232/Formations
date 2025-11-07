@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: formations-api
+    env: node
+    buildCommand: npm install
+    startCommand: node formation-detector.js
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: 18.0.0
